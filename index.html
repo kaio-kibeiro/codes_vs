@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A FonGames oferece manutenção de consoles, venda de jogos exclusivos e suporte técnico de qualidade.">
+    <title>FonGames - Tudo sobre Games</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+<!--Font Awesome-->
+<script src="https://kit.fontawesome.com/20822500e5.js" crossorigin="anonymous"></script>
+<!-- Progress Bar -->
+ <script src="js/progressbar.min.js"></script>
+ <!-- Parallax -->
+ <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container" id="nav-container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <a href="#" class="navbar-brand">
+                <img id="logo" src="img/fongames_logoo.webp" alt="FonGames"> FonGames
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" id="home-menu" href="#mainSlider">Início</a>
+                    <a class="nav-item nav-link" id="about-menu" href="#about-area">Quem somos</a>
+                    <a class="nav-item nav-link" id="products-menu" href="#portfolio-area">Produtos</a>
+                    <a class="nav-item nav-link" id="team-menu" href="#team-area">Time</a>
+                    <a class="nav-item nav-link" id="contact-menu" href="#contact-area">Contato</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+   <div class= "container-fluid">
+       <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+           <ol class="carousel-indicators">
+               <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></button>
+               <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"></button>
+               <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"></button>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/banner1.jpg" class="d-block w-100" alt="Vendas de Consoles">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Quer dar um upgrade no seu console?</h2>
+                        <p>Conte conosco, temos mais de 50 lojas disponíveis</p>
+                        <a href="#" class="main-btn">Ver lojas</a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="img/banner2.jpg" class="d-block w-100" alt="Procura de jogos">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Está a procura de um novo jogo?</h2>
+                        <p>Nossa equipe está pronta para lhe atender.</p>
+                        <a href="#" class="main-btn">Entre em contato</a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="img/banner3.jpg" class="d-block w-100" alt="Manutenção de consoles">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Está buscando manutenção no seu console?</h2>
+                        <p>A FonGames conta com técnicos qualificados para resolver o seu problema.</p>
+                        <a href="#" class="main-btn">Entre em contato</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#mainSlider" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a href="#mainSlider" class="carousel-control-next" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Sobre a empresa -->
+        <div id="about-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title">Sobre a FonGames</h3>
+                    </div>
+                    <div class="col-md-6">
+                        
+                        <img class="img-fluid" src="img/loja.jpg" alt="Lojas FonGames">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="about-title">A mais completa do Universo Gamer!</h3>
+                        <p>Nosso compromisso é com a qualidade e a satisfação dos gamers.</p>
+                        <p>Com uma equipe apaixonada por tecnologia e jogos, buscamos oferecer um atendimento único e soluções personalizadas.</p>
+                        <p>Provident.</p>
+                        <p>Veja os nossos diferenciais:</p>
+                        <ul id="about-list">
+                            <li><i class="fas fa-check"></i> Manutenção especializada e consoles de última geração</li>
+                            <li><i class="fas fa-check"></i> Venda de jogos exclusivos e lançamentos</li>
+                            <li><i class="fas fa-check"></i> Personalização de consoles com design exclusivo</li>
+                            <li><i class="fas fa-check"></i> Atendimento rápido e suporte técnico dedicado</li>
+                            <li><i class="fas fa-check"></i> Opções de pagamento facilitadas para todos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Serviços da empresa -->
+         <div id="services-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title">Nossas especialidades</h3>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-gamepad"></i>
+                        <h4>Manutenção de Consoles</h4>
+                        <p>Oferecemos suporte técnico especializado para consertos e manutenção de consoles de última geração.</p>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-cart-plus"></i>
+                        <h4>Venda de Consoles</h4>
+                        <p>Encontre os consoles mais desejados no mercado com garantia e suporte direto da nossa equipe.</p>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-compact-disc"></i>
+                        <h4>Vendas de Jogos</h4>
+                        <p>Escolha entre uma ampla seleção de jogos para todas as plataformas, garantindo a diversão em qualquer estilo.</p>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-headset"></i>
+                        <h4>Suporte Técnico Especializado 24/7</h4>
+                        <p>Nossa equipe está disponível para assistência e dúvidas sobre produtos e serviços da FonGames.</p>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-sync-alt"></i>
+                        <h4>Atualizações de Software</h4>
+                        <p>Mantenha seus dispositivos atualizados com os últimos softwares para desempenho e segurança aprimorados.</p>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-gift"></i>
+                        <h4>Acessórios para Consoles</h4>
+                        <p>Complemente sua experiência com uma variedade de acessórios originais e compatíveis para todos os consoles.</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!-- Dados da Empresa-->
+          <div id="data-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 circle-box">
+                        <div id="circleA"></div>
+                        <p>Jogos entregues</p>
+                    </div>
+                    <div class="col-md-3 circle-box">
+                        <div id="circleB"></div>
+                        <p>Clientes satisfeitos</p>
+                    </div>
+                    <div class="col-md-3 circle-box">
+                        <div id="circleC"></div>
+                        <p>Consoles vendidos</p>
+                    </div>
+                    <div class="col-md-3 circle-box">
+                        <div id="circleD"></div>
+                        <p>Consoles consertados</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!-- Time -->
+           <div id="team-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title">Nosso time</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/perfil1.jpg" class="card-img-top" alt="Imagem de Perfil 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Roronoa Zoro</h5>
+                                <p class="card-text">Diretor Executivo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/perfil2.jpg" class="card-img-top" alt="Imagem de Perfil 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Vinsmoke Sanji</h5>
+                                <p class="card-text">Especialista em Vendas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/perfil3.jpg" class="card-img-top" alt="Imagem de Perfil 3">
+                            <div class="card-body">
+                                <h5 class="card-title">D.Brook</h5>
+                                <p class="card-text">Tech Lead</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/perfil4.png" class="card-img-top" alt="Imagem de Perfil 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Monkey D. Luffy</h5>
+                                <p class="card-text">Diretor de Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Trabalhe conosco -->
+             <div id="apply-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 apply-box" id="company-img"></div>
+                        <div class="col-md-6 apply-box" id="pattern-img">
+                            <h4>Gosta de desafios?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum inventore in quas ipsum beatae eos quo soluta eligendi consequuntur iusto enim consectetur alias, voluptatibus voluptates eveniet tempore facere odit quasi!</p>
+                            <p>Clique no botão abaixo e confira os benefícios e as posições em aberto.</p>
+                            <p>Aqui você terá a  chance de trabalhar com as melhores técnologias e os profissionais mais capacitados.</p>
+                            <a href="#" class="main-btn" id="apply-btn">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <!-- Portfolio-->
+              <div id="portfolio-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="main-title">Explore nossos serviços</h3>
+                        </div>
+                        <div class="col-md-12" id="filter-btn-box">
+                            <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+                            <button class="main-btn filter-btn" id="console-btn">Consoles</button>
+                            <button class="main-btn filter-btn" id="games-btn">Jogos</button>
+                            <button class="main-btn filter-btn" id="repair-btn">Manutenção</button>
+                        </div>
+                        <div class="col-md-4 project-box console">
+                            <img src="img/proj1.jpeg" class="img-fluid" alt="Projeto 1">
+                        </div>
+                        <div class="col-md-4 project-box games">
+                            <img src="img/proj2.jpeg" class="img-fluid" alt="Projeto 2">
+                        </div>
+                        <div class="col-md-4 project-box repair">
+                            <img src="img/proj3.jpeg" class="img-fluid" alt="Projeto 3">
+                        </div>
+                        <div class="col-md-4 project-box console">
+                            <img src="img/proj4.jpeg" class="img-fluid" alt="Projeto 4">
+                        </div>
+                        <div class="col-md-4 project-box games">
+                            <img src="img/proj5.jpeg" class="img-fluid" alt="Projeto 5">
+                        </div>
+                        <div class="col-md-4 project-box repair">
+                            <img src="img/proj6.jpeg" class="img-fluid" alt="Projeto 6">
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- News letter -->
+               <div id="news-area">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Fique por dentro das novidades</h3>
+                    </div>
+                    <p>Assine nossa lista de e-mails, e receba ofertas exclusivas e promoções especiais</p>
+                    <form action="">
+                        <input type="email" class="form-control" id="email-input" name="email" placeholder="Seu melhor e-mail" required>
+                        <input type="submit" id="news-btn" value="Inscrever">
+                    </form>
+                </div>
+               </div>
+               <!-- Call to action-->
+                <div id="call-area">
+                    <div class="container">
+                        <div class="row">
+                            <p>Deseja fazer um orçamento sem compromisso?</p>
+                            <button class="main-btn" id="call-btn">Orçar</button>
+                        </div>
+                    </div>
+                </div>
+           </div>
+    </div> 
+</main>
+<!-- Rodapé -->
+ <footer>
+    <div id="contact-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="main-title">Entre em contato conosco</h3>
+                </div>
+                <div class="col-md-4 contact-box">
+                    <i class="fas fa-phone"></i>
+                    <p><span class="contact-title">Ligue para:</span> (77)98870-0304</p>
+                    <p><span class="contact-title">Horários:</span> 8:00 - 19:00</p>
+                </div>
+                <div class="col-md-4 contact-box">
+                    <i class="fas fa-envelope"></i>
+                    <p><span class="contact-title">Envie um e-mail:</span> contato@fonfames.com.br</p>
+                </div>
+                <div class="col-md-4 contact-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><span class="contact-title">Venha tomar um café:</span> Rua Lorem Ipsum - 2222</p>
+                </div>
+                <div class="col-md-6" id="msg-box">
+                    <p>Ou nos deixe uma mensagem:</p>
+                </div>
+                <div class="col-md-6" id="contact-form">
+                    <form action="">
+                        <input type="email" class="form-control" placeholder="E-mail" name="email">
+                        <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                        <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                        <input type="submit" class="main-btn" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copy-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Desenvolvido por <a href="https://www.instagram.com/kaio_ribeiro3002/" target="_blank">Kaio Ribeiro</a> &copy; 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </footer>
+ <!-- Scripts do projeto -->
+<script src="js/progressbar.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
+
+
+                
+        
+       
+
+
+                    
+                
+                
+
+
+
